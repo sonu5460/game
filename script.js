@@ -43,7 +43,7 @@ const playgame=(userchoice)=>{
     if (userchoice === computerchoice)
     {
         console.log("game is drow");
-        play_button.innerText="Match is Tie";
+        play_button.innerText="match is tie";
         play_button.style.color="#333";
         play_button.style.backgroundColor="#DCB30A";
         play_button.classList.add("shaking");
