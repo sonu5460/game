@@ -42,7 +42,7 @@ h1 {
   height: 18vh;
   width: 18vh;
   border-radius: 50%;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px 8px #000;
   display: flex;
   justify-content: center;
   align-items: center;
