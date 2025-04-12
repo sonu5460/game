@@ -1,0 +1,223 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-color: #d8f3dc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+/* Headline */
+h1 {
+  /* line-height: 4rem; */
+  font-size: 2rem;
+  background-color: #060526;
+  color: #00f5d4;
+  text-shadow: 0 0 10px #00f5d4, 0 0 20px #00f5d4;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+/* Container for choices */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.box {
+  height: 18vh;
+  width: 18vh;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: aqua;
+  opacity: 0.6;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Result section */
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.box1 {
+  height: auto;
+  width: auto;
+ 
+  /* padding: 1rem; */
+}
+
+#vs {
+  background-size: cover;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 10%;
+  /* display: flex;
+  flex-direction:column ; */
+
+}
+
+/* Label styles */
+#h, #h3 {
+  background: linear-gradient(90deg, rgba(10,8,58,1), rgba(149,30,32,1), rgba(46,4,4,1));
+  color: white;
+  padding: 1rem;
+  border-radius: 1vh;
+  font-size: 1rem;
+  max-width: 230px;
+  margin: auto;
+}
+
+/* Scoreboard */
+.score-bord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+.move {
+  margin-top: 2rem;
+}
+
+.play {
+  display: inline-block;
+  background-color: #7FA8DA;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.reset {
+  margin-top: 3vh;
+  background-color: orange;
+  height: 5vh;
+  /* width: 15vh; */
+  width: 20%;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+}
+
+/* Button Animation */
+.button2 {
+  animation: zoom 2s infinite;
+}
+
+@keyframes zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Text shake animation */
+.shaking {
+  animation: shake 2s ease-in-out;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+
+/* Small Phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    /* line-height: rem; */
+  }
+
+  .box {
+    height: 15vh;
+    width: 15vh;
+  }
+
+  #vs {
+    height: 10vh;
+    width: 10vh;
+  }
+
+  .play {
+    font-size: 1.2rem;
+  }
+
+  .reset {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .score-bord {
+    gap: 1.5rem;
+  }
+
+  #h, #h3 {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .box {
+    height: 16vh;
+    width: 16vh;
+  }
+
+  .play {
+    font-size: 1.3rem;
+  }
+
+  .reset {
+    width: 50%;
+  }
+}

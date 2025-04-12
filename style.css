@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    /* line-height: 5rem; */
+    
+}
+body{
+    background-color: #d8f3dc;
+    margin: 0px;
+}
+/* @media (max-width: 480px) {
+    body {
+      flex-direction: column;
+      align-items: center;
+     
+    }
+} */
+h1{
+    line-height: 5rem;
+    font-size: 3rem;
+    /* background-color:#0A083A; */
+    background-color: #060526;
+    color:white;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #00f5d4; /* light neon aqua */
+    text-shadow: 0 0 10px #00f5d4, 0 0 20px #00f5d4, 0 0 40px #00f5d4;
+    font-weight: 800;
+    /* margin: 0%; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+     
+    width: 100%;
+    flex-wrap: wrap;
+    
+    gap: 3rem;
+    
+   
+}
+.box{
+
+    /* height: 20vh;
+    width: 20vh; */
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* gap: 4vh; */
+
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px #000;
+    
+}
+
+ .box:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: aqua;
+    opacity: 0.5;
+
+} 
+
+img{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+p{
+    
+    font-size: 2rem;
+    
+}
+.score-bord{
+    display: flex;
+    /* color:white; */
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 10vh;
+}
+.move
+{
+    margin-top: 2rem;
+    
+    
+}
+
+.play{
+    display: inline;
+    background-color:#7FA8DA;
+    font-size: 2rem;
+    padding: 0.8rem;
+border-radius: 1rem;
+}
+.reset{
+margin-top: 5vh;
+background-color: orange;
+height: 5vh;
+width: 15vh;
+border-radius: 2rem;
+/* margin-right: 20vh; */
+
+}
+
+.button2{
+    animation: zoom 2s infinite;
+}
+
+@keyframes zoom{
+    0%
+    {
+        transform:scale(1);
+
+    }
+    50%{
+        transform:scale(1.2);
+    }
+    100%{
+        transform:scale(1);
+    }
+} 
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+    padding-top: 15px;
+    width: 100%;;
+    
+}
+
+
+.box1{
+    /* height: 10vh;
+    width: 32vh; */
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    
+    /* background-size: cover; */
+    background-position: 50%;
+    gap: 30rem;
+}
+
+#vs{
+    /* background-image: url("image/OIP.jpeg"); */
+    background-size: cover;
+    border-radius: 10%;
+    height: 15vh;
+    width: 15vh;
+    gap: 10rem;
+}
+
+#h{
+    /* display: inline ; */
+    background: linear-gradient(90deg, rgba(10, 8, 58, 1) 0%, rgba(149, 30, 32, 1) 53%, rgba(46, 4, 4, 1) 100%);
+    background-color: #151256;
+    color:white;
+    width:210px ;
+    padding: 1rem;
+    border-radius: 1vh;
+    
+   
+}
+
+#h3{
+    /* background-color: #151256; */
+    background: RGB(10, 8, 58);
+    background: linear-gradient(90deg, rgba(10, 8, 58, 1) 0%, rgba(149, 30, 32, 1) 53%, rgba(46, 4, 4, 1) 100%);
+    color:white;
+    width:232px ;
+    padding: 1rem;
+    border-radius: 1vh;
+}
+
+
+.shaking {
+    animation: shake 2s ease-in-out;
+    display: inline-block;
+    font-size: 3rem; 
+     /* color: #7c6fff;
+    text-shadow: 0 0 6px #cdb4db, 0 0 12px #b8c0ff; */
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+      /* line-height: rem; */
+    }
+  
+    .box {
+      height: 15vh;
+      width: 15vh;
+      
+    }
+    
+  
+    #vs {
+      height: 10vh;
+      width: 10vh;
+    }
+  
+    .play {
+      font-size: 1.2rem;
+    }
+  
+    .reset {
+      width: 80%;
+      font-size: 1rem;
+    }
+  
+    .score-bord {
+      gap: 1.5rem;
+    }
+  
+    #h, #h3 {
+      font-size: 0.9rem;
+      width: 80%;
+    
+    }
+  }
