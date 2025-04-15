@@ -1,1 +1,1 @@
-i have built Tic toc tuo game
+i have built Rock-paper-scissor  game || Tow play game human and computer 
